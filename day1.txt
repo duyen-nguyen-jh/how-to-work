@@ -1,14 +1,1 @@
-1) When we are creating new feature, what branch should we based on and why ?
-    
-    Khi tạo feature mới, nên dựa trên nhánh master do các nguyên nhân sau:
-    -   Code trên nhánh master lúc nào cũng là code mới hơn (nhánh production) dùng cho việc phát triển các tính năng mới của sản phẩm.
-    -   Đề phòng trường hợp code đang phát triển feature mới gây hư, sập ... các chức năng liên quan khi người dùng đang sử dụng trên production, tiết kiệm chi phí và công rollback lại code cũ để có thể sử dụng đc.
-    -   Nhánh master có bộ test để test chức năng mới (nhánh production ko test) -> phát triển tính năng mới thì cần phải test.
-    Command:
-            git checkout -b feature/featureName
-2) what course of action are you going to do with Git to before resolving the bug?
-    -   Revert commit bị bug trên master để khi test checkout từ nhánh master không bị lỗi.
-3) How do we remove that merged feature? 
-    - revert commit cuối cùng, do sau khi merge code sẽ tự động phát sinh ra 1 commit MERGE, revert commit này sẽ tự động remove toàn bộ lịch sử commit bên nhánh feature/delete-user đã merge vào production ra khỏi nhánh production.
-
-    
+Link trả lời câu hỏi Day1: https://docs.google.com/document/d/1eUXovKeARLQh3zUCJLWEn0LG0dngdSS65mkPprSvLcQ/edit?usp=sharing
